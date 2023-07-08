@@ -31,6 +31,9 @@
     "helmet": "^7.0.0",
     "mongoose": "^7.3.2",
     "nestjs-envalid": "^1.0.0",
+    "nestjs-pino": "^3.3.0",
+    "pino-http": "^8.3.3",
+    "pino-pretty": "^10.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
     "swagger-ui-express": "^4.6.3"
