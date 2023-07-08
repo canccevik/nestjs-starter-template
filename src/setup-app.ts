@@ -6,6 +6,9 @@ import { useContainer } from 'class-validator'
 import { Config, ENV } from '@config/index'
 import { TransformInterceptor } from '@core/interceptors'
 import { Reflector } from '@nestjs/core'
+import mongoSanitize from 'express-mongo-sanitize'
+import compression from 'compression'
+import helmet from 'helmet'
 
 export function setupApp(app: NestExpressApplication): void {
   const config = app.get<Config>(ENV)
@@ -13,6 +16,10 @@ export function setupApp(app: NestExpressApplication): void {
   useContainer(app.select(AppModule), { fallbackOnErrors: true })
 
   app.setGlobalPrefix(config.GLOBAL_PREFIX)
+
+  app.use(helmet())
+  app.use(compression())
+  app.use(mongoSanitize())
 
   app.useGlobalPipes(new ValidationPipe())
   app.useGlobalFilters(new HttpExceptionFilter())
