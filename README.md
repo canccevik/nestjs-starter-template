@@ -8,7 +8,7 @@
 
 - Mongoose
 - OpenAPI
-- Logger ([pino](https://github.com/iamolegga/nestjs-pino))
+- Logger ([nestjs-pino](https://github.com/iamolegga/nestjs-pino))
 - Test ([jest](https://github.com/jestjs/jest))
 - Environment config object with types and validation ([nestjs-envalid](https://github.com/simenandre/nestjs-envalid))
 - Repository design pattern
