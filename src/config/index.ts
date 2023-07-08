@@ -4,7 +4,7 @@ import { makeValidators, Static } from 'nestjs-envalid'
 const config = {
   PORT: port({ default: 3001 }),
   GLOBAL_PREFIX: str({ default: 'api' }),
-  DATABASE_URI: str()
+  DATABASE_URI: str({ default: 'mongodb://localhost:27017/nestjs-starter-template' })
 }
 
 export const validators = makeValidators(config)

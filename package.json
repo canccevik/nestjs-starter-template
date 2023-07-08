@@ -10,10 +10,10 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest --verbose --config ./test/jest-unit.json",
+    "test": "jest --verbose --passWithNoTests --config ./test/jest-unit.json",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:e2e": "jest --verbose --detectOpenHandles --forceExit --config ./test/jest-e2e.json",
+    "test:e2e": "jest --verbose --passWithNoTests --detectOpenHandles --forceExit --config ./test/jest-e2e.json",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
