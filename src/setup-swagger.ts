@@ -7,7 +7,7 @@ export function setupSwagger(app: NestExpressApplication): void {
   const config = app.get<Config>(ENV)
 
   const swaggerTitle = 'NestJS Starter Template'
-  const swaggerDescription = 'Official documentation of NestJS Starter Template'
+  const swaggerDescription = 'Official API documentation of NestJS Starter Template'
 
   const swaggerConfig = new DocumentBuilder()
     .setTitle(swaggerTitle)
