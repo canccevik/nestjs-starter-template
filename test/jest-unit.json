@@ -11,7 +11,8 @@
   "moduleNameMapper": {
     "^@config/(.*)$": "<rootDir>/config/$1",
     "^@core/(.*)$": "<rootDir>/core/$1",
-    "^@modules/(.*)$": "<rootDir>/modules/$1"
+    "^@modules/(.*)$": "<rootDir>/modules/$1",
+    "^@features/(.*)$": "<rootDir>/features/$1"
   },
   "testTimeout": 20000
 }

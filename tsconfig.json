@@ -3,7 +3,8 @@
     "paths": {
       "@config/*": ["src/config/*"],
       "@core/*": ["src/core/*"],
-      "@modules/*": ["src/modules/*"]
+      "@modules/*": ["src/modules/*"],
+      "@features/*": ["src/features/*"]
     },
     "module": "commonjs",
     "declaration": true,
